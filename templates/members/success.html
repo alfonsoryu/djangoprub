@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Registro Exitoso{% endblock %}
+
+{% block content %}
+<div class="max-w-2xl mx-auto text-center">
+    <div class="bg-white rounded-lg shadow-md p-8">
+        <svg class="w-16 h-16 text-green-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+        <h2 class="text-2xl font-bold text-[#8B0000] mb-4">¡Registro Completado!</h2>
+        <p class="text-gray-600 mb-6">Tu registro ha sido procesado exitosamente. Pronto nos pondremos en contacto contigo.</p>
+        <a href="{% url 'member_registration' %}" class="btn-primary inline-block">
+            Volver al Formulario
+        </a>
+    </div>
+</div>
+{% endblock %}
